@@ -91,7 +91,7 @@ class ProductsController extends Controller
     {
         $product->update($this->validateRequests());
 
-        return redirect()->back()->with('success', 'Product updated succesfully!');
+        return redirect()->route('publishedby.index')->with('success', 'Product updated succesfully!');
     }
 
     /**
